@@ -1,0 +1,47 @@
+[
+  {
+    "id": "task-001",
+    "titol": "Crea l'estructura de carpetes del projecte",
+    "descripcio": "Organitza els fitxers: HTML, CSS, JS, dades...",
+    "data": "2025-04-15",
+    "categoria": { "nom": "Organització", "color": "#f7df1e" },
+    "prioritat": "Alta",
+    "realitzada": false
+  },
+  {
+    "id": "task-002",
+    "titol": "Dissenya la interfície d'index.html",
+    "descripcio": "Mostra la llista de tasques i afegeix el contenidor del gràfic.",
+    "data": "2025-04-16",
+    "categoria": { "nom": "Disseny", "color": "#e5989b" },
+    "prioritat": "Mitjana",
+    "realitzada": false
+  },
+  {
+    "id": "task-003",
+    "titol": "Implementa el formulari a crear-tasca.html",
+    "descripcio": "Inclou validació dels camps i guardat a localStorage.",
+    "data": "2025-04-17",
+    "categoria": { "nom": "Formularis", "color": "#6c5ce7" },
+    "prioritat": "Alta",
+    "realitzada": false
+  },
+  {
+    "id": "task-004",
+    "titol": "Permet marcar les tasques com a fetes",
+    "descripcio": "Afegir checkbox a index.html i actualitzar l'estat.",
+    "data": "2025-04-18",
+    "categoria": { "nom": "Funcionalitat", "color": "#00cec9" },
+    "prioritat": "Alta",
+    "realitzada": false
+  },
+  {
+    "id": "task-005",
+    "titol": "Crea el gràfic amb Chart.js",
+    "descripcio": "Mostrar les tasques fetes per mes en format bar chart.",
+    "data": "2025-04-20",
+    "categoria": { "nom": "Visualització", "color": "#fab1a0" },
+    "prioritat": "Alta",
+    "realitzada": false
+  }
+]
