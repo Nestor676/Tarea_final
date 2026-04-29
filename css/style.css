@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: whitesmoke;
+}
+
 li{
     list-style-type: none;
 }
@@ -32,4 +36,60 @@ li{
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.caja_crear{
+    background-color: white;
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.boton_crear{
+    background-color: cornflowerblue;
+    color: white;
+    width: 15%;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.boton_crear:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.archivo{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.input_archivo{
+    width: 15%;
+    height: 30px;
+    border-color: rgb(167, 163, 163);
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.subir_archivo{
+    background-color: cornflowerblue;
+    color: white;
+    width: 10%;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.subir_archivo:hover{
+    background-color: blue;
+    cursor: pointer;
 }
