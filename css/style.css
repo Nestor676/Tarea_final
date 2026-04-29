@@ -11,6 +11,11 @@ li{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .caja{
     display: flex;
     flex-direction: row;
@@ -28,6 +33,15 @@ li{
 
 .navegador{
     margin-top: 20px;
+    color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navegador:hover{
+    background-color: blue;
 }
 
 .main{
