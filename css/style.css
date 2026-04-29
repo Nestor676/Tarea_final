@@ -57,6 +57,7 @@ a{
     align-items: center;
 }
 
+/* Index */
 .caja_crear{
     background-color: white;
     width: 90%;
@@ -119,4 +120,18 @@ a{
 
 .margin-top-40px{
     margin-top: 40px;
+}
+
+/* Crear-tareas */
+
+.crear_tarea{
+    background-color: white;
+    width: 50%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
