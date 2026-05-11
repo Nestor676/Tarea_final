@@ -57,6 +57,26 @@ a{
     align-items: center;
 }
 
+.altura-6cp{
+    height: 6%;
+}
+
+.altura-10cp{
+    height: 10%;
+}
+
+.margin-top-10px{
+    margin: 10px 0px;
+}
+
+.margin-left-5cp{
+    margin-left: 5%;
+}
+
+.margin-top-40px{
+    margin-top: 40px;
+}
+
 /* Index */
 .caja_crear{
     background-color: white;
@@ -114,24 +134,33 @@ a{
     cursor: pointer;
 }
 
-.margin-left-5cp{
-    margin-left: 5%;
-}
-
-.margin-top-40px{
-    margin-top: 40px;
-}
-
 /* Crear-tareas */
 
 .crear_tarea{
     background-color: white;
-    width: 50%;
-    height: 600px;
+    width: 30%;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+
+.formulario_tarea{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boton_tarea{
+    background-color: cornflowerblue;
+    color: white;
+    width: 30%;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 20px;   
 }

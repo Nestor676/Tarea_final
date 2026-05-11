@@ -22,15 +22,30 @@
                 <h1>Crear Tarea</h1>
 
                 <div class="crear_tarea">
-                    <form>
-                        <label for="nombre">Titulo</label>
-                        <input type="text">
+                    <form class="formulario_tarea">
+                        <label for="nombre">Titulo:</label>
+                        <input type="text" class="input_nombre altura-6cp margin-top-10px">
 
-                        <label for="descripcion">Descripción</label>
-                        <textarea name="descripcion" class="tarea-textarea"></textarea>
+                        <label for="descripcion">Descripción:</label>
+                        <textarea name="descripcion" class="tarea-textarea altura-10cp margin-top-10px"></textarea>
 
-                        <label for="date">Fecha</label>
-                        <input type="date">
+                        <label for="date">Fecha:</label>
+                        <input type="date" class="input_fecha altura-6cp margin-top-10px">
+
+                        <label for="categoria">Categoria:</label>
+                        <select class="select_categoria altura-6cp margin-top-10px">
+                            <option value="">Crea una categoria</option>
+                        </select>
+
+                        <label for="prioridad">Prioridad:</label>
+                        <select class="select_prioridad altura-6cp margin-top-10px">
+                            <option value="">Seleccionar prioridad</option>
+                            <option value="baja">Baja</option>
+                            <option value="media">Media</option>
+                            <option value="alta">Alta</option>
+                        </select>
+
+                        <button class="boton_tarea">Crear Tarea</button>
                     </form>
                 </div>
             </div>
