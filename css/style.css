@@ -174,7 +174,7 @@ a{
 .crear_categoria{
     background-color: white;
     width: 30%;
-    height: 300px;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
@@ -188,4 +188,14 @@ a{
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+
+.boton_categoria{
+    background-color: cornflowerblue;
+    color: white;
+    width: 30%;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 10px; 
 }
