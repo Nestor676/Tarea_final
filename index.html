@@ -23,7 +23,7 @@
                 <h1>Lista de Actividades</h1>
 
                 <div class="caja_crear">
-                    <button class="boton_crear">Crear tarea nueva</button>
+                    <button class="boton_crear"><a href="crear-tareas.html">Crear tarea nueva</a></button>
                     <section class="archivo">
                         <input type="text" class="input_archivo" placeholder=" nombre del archivo">
                         <button class="subir_archivo">Añadir</button>
@@ -32,8 +32,12 @@
             </div>
             
             <h1 class="margin-left-5cp margin-top-40px">Tareas Pendientes</h1>
+            <div id="tareas-pendientes" class="margin-left-5cp" style="margin-top:10px; width:80%;"></div>
 
             <h1 class="margin-left-5cp margin-top-40px">Tareas Acabadas</h1>
+            <div id="tareas-acabadas" class="margin-left-5cp" style="margin-top:10px; width:80%;"></div>
+            <script src="js/importar-datos.js"></script>
+            <script src="js/tareas.js"></script>
 
         </div>
     </div>
