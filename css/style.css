@@ -199,3 +199,15 @@ a{
     border-radius: 5px;
     margin-top: 10px; 
 }
+
+.categorias{
+    background-color: white;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
