@@ -22,20 +22,20 @@
                 <h1>Gestion de Categoria</h1>
 
                 <div class="crear_categoria">
-                    <form class="formulario_categoria">
+                    <form class="formulario_categoria" id="form-categoria">
                         <label for="categoria">Nueva categoria:</label>
-                        <input type="text" class="input_categoria altura-13cp margin-top-10px">
+                        <input type="text" id="input-nombre-categoria" class="input_categoria altura-13cp margin-top-10px" placeholder="Nombre de la categoría">
 
                         <section>
                             <label for="color">Color de la Categoria:</label>
-                            <input type="color" class="input_color margin-top-10px">
+                            <input type="color" id="input-color-categoria" class="input_color margin-top-10px" value="#ff0000">
                         </section>
 
-                        <button class="boton_categoria">Crear Tarea</button>
+                        <button class="boton_categoria" type="submit">Crear Categoria</button>
                     </form>
                 </div>
 
-                <div class="categorias">
+                <div id="lista-categorias">
 
                 </div>
 
@@ -44,4 +44,5 @@
     </div>
 
 </body>
+<script src="js/categorias.js"></script>
 </html>

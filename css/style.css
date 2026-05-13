@@ -200,14 +200,185 @@ a{
     margin-top: 10px; 
 }
 
-.categorias{
-    background-color: white;
+#lista-categorias{
+    background-color: #f5f5f5;
     width: 30%;
-    height: 50px;
     border-radius: 10px;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    padding: 10px;
     margin-top: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    gap: 8px;
+}
+
+.categoria-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.categoria-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.categoria-swatch{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.categoria-nombre{
+    font-size: 14px;
+}
+
+.btn-eliminar-categoria{
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-eliminar-categoria:hover{
+    background-color: #d93636;
+}
+
+/* Tareas - tarjetas y prioridad */
+.tarea-card{
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #000;
+    /* Make cards flexible and narrower so multiple can fit in a row */
+    flex: 0 1 300px; /* each card will try to be 300px and shrink if needed */
+    box-sizing: border-box;
+}
+
+.tarea-titulo{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.tarea-categoria{
+    font-size: 13px;
+}
+
+/* Limit category label width so it doesn't occupy full card width and show ellipsis */
+.tarea-categoria{
+    max-width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Action buttons container */
+.tarea-actions{
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.tarea-btn{
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tarea-btn:hover{
+    background: rgba(0,0,0,0.06);
+}
+
+/* Icon styles: keep icons black */
+.tarea-btn svg{
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+
+/* Completed task visual hint */
+.tarea-completada{
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.tarea-fecha{
+    font-size: 12px;
+    color: #333;
+}
+
+.tarea-descripcion{
+    font-size: 14px;
+    color: #222;
+}
+
+/* Row containing description and actions: description left, actions right */
+.tarea-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.tarea-row .tarea-descripcion{
+    flex: 1 1 auto;
+    margin-right: 8px;
+}
+
+/* Make actions stick to the right edge */
+.tarea-actions{
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+/* Prioridad backgrounds (soft colors) */
+.tarea-prioridad-alta{
+    background-color: #ffe5e5; /* rojo flojo */
+}
+
+.tarea-prioridad-media{
+    background-color: #fff8e5; /* amarillo flojo */
+}
+
+.tarea-prioridad-baja{
+    background-color: #e9f7ea; /* verde flojo */
+}
+
+/* Container behavior: align cards side-by-side and wrap */
+#tareas-pendientes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 8px 0;
+}
+
+/* Finished tasks container should behave the same */
+#tareas-acabadas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 8px 0;
 }
